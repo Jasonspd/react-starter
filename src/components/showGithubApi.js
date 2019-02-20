@@ -11,7 +11,7 @@ class showGithubApi extends React.Component {
     }
 
     componentDidMount() {
-        getGithubApi('nodejs')
+        getGithubApi('nodejs', 'http-parser')
             .then(data => {
                 this.setState({data: data})
                 console.log("state", this.state.data)
